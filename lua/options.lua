@@ -17,7 +17,6 @@ vopt.termguicolors  = true
 vwo.fillchars = 'eob: '
 
 vo.foldcolumn = '0'
-vo.laststatus = 3
 
 vg.loaded_netrw       = 1
 vg.loaded_netrwPlugin = 1
