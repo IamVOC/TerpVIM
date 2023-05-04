@@ -1,5 +1,5 @@
 local lsp = require('lsp-zero').preset({
-  name = 'minimal',
+  name = 'recommended',
   set_lsp_keymaps = true,
   manage_nvim_cmp = true,
   suggest_lsp_servers = false,
@@ -8,10 +8,10 @@ local lsp = require('lsp-zero').preset({
 })
 
 lsp.set_sign_icons({
-  error = 'ᚸ',
-  warn = 'ᛄ',
-  hint = 'ᛃ',
-  info = 'ᛜ'
+  error = '󱐩',
+  warn  = '󰌤',
+  hint  = '󱟄',
+  info  = ''
 })
 
 lsp.setup()
