@@ -1,15 +1,25 @@
-local opt = vim.opt
-local wo = vim.wo
+local vopt = vim.opt
+local vwo = vim.wo
+local vo = vim.o
+local vg = vim.g
+local vcmd = vim.cmd
 
-opt.number = true
-opt.numberwidth = 4
-opt.relativenumber = true
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.shiftwidth = 4
-opt.completeopt = { "menuone", "noselect"}
-opt.swapfile = false
-opt.termguicolors = true
+vopt.number = true
+vopt.numberwidth = 4
+vopt.relativenumber = true
+vopt.tabstop = 4
+vopt.softtabstop = 4
+vopt.shiftwidth = 4
+vopt.completeopt = { "menuone", "noselect"}
+vopt.swapfile = false
+vopt.termguicolors = true
 
-wo.fillchars = 'eob: '
-vim.o.foldcolumn = '0'
+vwo.fillchars = 'eob: '
+
+vo.foldcolumn = '0'
+vo.laststatus = 3
+
+vg.loaded_netrw = 1
+vg.loaded_netrwPlugin = 1
+
+vcmd.colorscheme 'catppuccin'

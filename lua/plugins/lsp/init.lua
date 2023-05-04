@@ -1,16 +1,5 @@
 local M = {}
 
-local servers = {
-  gopls = {},
-  html = {},
-  jsonls = {},
-  pyright = {},
-  rust_analyzer = {},
-  tsserver = {},
-  vimls = {},
-  omnisharp = {},
-}
-
 local function on_attach(client, bufnr)
   -- Enable completion triggered by <C-X><C-O>
   -- See `:help omnifunc` and `:help ins-completion` for more information.
@@ -30,9 +19,5 @@ local opts = {
     debounce_text_changes = 150,
   },
 }
-
-function M.setup()
-  require("plugins.lsp.installer").setup(servers, opts)
-end
-
 return M
+
