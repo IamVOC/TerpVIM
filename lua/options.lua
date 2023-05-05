@@ -23,4 +23,4 @@ vg.loaded_netrwPlugin = 1
 
 vcmd.colorscheme 'catppuccin'
 
-
+vim.notify = require('notify')

@@ -20,4 +20,9 @@ return{
         'folke/which-key.nvim',
         lazy = true,
   },
+  {
+		'akinsho/toggleterm.nvim',
+		version = "*",
+		config = true
+  }
 }
