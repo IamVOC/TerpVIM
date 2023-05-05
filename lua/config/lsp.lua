@@ -14,4 +14,14 @@ lsp.set_sign_icons({
   info  = ''
 })
 
+lsp.nvim_workspace()
+
 lsp.setup()
+
+local cmp = require('cmp')
+
+cmp.setup({
+  mapping = {
+    ['<CR>'] = cmp.mapping.confirm({select = false}),
+  },
+})

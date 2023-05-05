@@ -22,3 +22,5 @@ vg.loaded_netrw       = 1
 vg.loaded_netrwPlugin = 1
 
 vcmd.colorscheme 'catppuccin'
+
+
